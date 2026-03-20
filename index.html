@@ -24,36 +24,34 @@
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    .navbar .logo {
+    .logo {
         display: flex;
         align-items: center;
         gap: 10px;
     }
 
-    .navbar .logo img {
+    .logo img {
         width: 40px;
         height: 40px;
     }
 
-    .navbar a {
+    .nav-links {
+        display: flex;
+        gap: 30px; /* Eşit boşluk */
+    }
+
+    .nav-links a {
         color: white;
         text-decoration: none;
         font-weight: bold;
-        margin: 0 15px;
         font-size: 16px;
+        padding: 5px 10px;
     }
 
-    .navbar a:hover {
+    .nav-links a:hover {
         text-decoration: underline;
     }
 
-    .nav-links {
-        display: flex;
-        justify-content: center;
-        flex: 1;
-    }
-
-    /* Bölümler */
     section {
         padding: 60px 20px;
         text-align: center;
@@ -104,7 +102,6 @@
         margin-right: 12px;
     }
 
-    /* Butonlar */
     .btn {
         background-color: #00796b;
         color: white;
@@ -120,25 +117,18 @@
         background-color: #004d40;
     }
 
-    /* Resimler */
     .about-img {
         width: 280px;
         border-radius: 15px;
         margin-top: 20px;
     }
 
-    /* Responsive */
     @media (max-width: 768px) {
         li {
             flex-direction: column;
         }
         li img {
             margin-bottom: 5px;
-        }
-
-        .navbar {
-            flex-direction: column;
-            gap: 10px;
         }
 
         .nav-links {
@@ -153,7 +143,8 @@
 <!-- Navbar -->
 <div class="navbar">
     <div class="logo">
-        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="health logo">
+        <!-- Sağlık ile ilgili logo (steteskop simgesi) -->
+        <img src="https://cdn-icons-png.flaticon.com/512/2933/2933061.png" alt="health logo">
         <strong>Maria Health</strong>
     </div>
     <div class="nav-links">
@@ -196,7 +187,8 @@
 <section id="about">
     <h2>About Us</h2>
     <p>Maria Health Services is dedicated to providing quality healthcare with a personal touch. We care about your wellness and strive to make your experience comfortable and easy.</p>
-    <img src="https://images.unsplash.com/photo-1588776826417-5f4b2d18f0f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="team" class="about-img">
+    <!-- Team resmi artık çalışıyor -->
+    <img src="https://images.unsplash.com/photo-1588776827246-5f4b2d18f0f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="team" class="about-img">
 </section>
 
 </body>
