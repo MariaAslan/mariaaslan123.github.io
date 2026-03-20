@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maria Health Services</title>
     <style>
-        /* Genel stil */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #e0f7fa; /* gökyüzü mavisi */
+            background-color: #e0f7fa;
         }
 
         /* Navbar */
         .navbar {
-            background-color: #00796b; /* koyu yeşil */
+            background-color: #00796b;
             padding: 15px 20px;
             display: flex;
             justify-content: space-between;
@@ -22,6 +21,8 @@
             color: white;
             position: sticky;
             top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         .navbar a {
@@ -42,23 +43,24 @@
         }
 
         #home {
-            background-color: #b2ebf2; /* açık mavi */
+            background: url('https://images.unsplash.com/photo-1588776814546-3c8918f13d06?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fGhlYWx0aCUyMGNhcmV8ZW58MHx8fHwxNjc4ODQ0MDYx&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center/cover;
+            color: white;
         }
 
         #services {
-            background-color: #ffffff; /* beyaz */
+            background-color: #ffffff;
         }
 
         #appointments {
-            background-color: #c8e6c9; /* açık yeşil */
+            background-color: #c8e6c9;
         }
 
         #about {
-            background-color: #ffffff; 
+            background-color: #ffffff;
         }
 
         h1, h2 {
-            color: #004d40; /* koyu yeşil */
+            color: #004d40;
         }
 
         p {
@@ -73,22 +75,49 @@
         }
 
         li {
-            margin: 5px 0;
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        li img {
+            width: 40px;
+            margin-right: 10px;
         }
 
         /* Butonlar */
         .btn {
             background-color: #00796b;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
             margin-top: 10px;
             display: inline-block;
+            transition: 0.3s;
         }
 
         .btn:hover {
             background-color: #004d40;
+        }
+
+        /* Resim stili */
+        .about-img {
+            width: 250px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            li {
+                flex-direction: column;
+            }
+            li img {
+                margin-bottom: 5px;
+            }
         }
     </style>
 </head>
@@ -116,10 +145,10 @@
     <section id="services">
         <h2>Our Services</h2>
         <ul>
-            <li>General Checkups</li>
-            <li>Lab Tests</li>
-            <li>Specialist Consultations</li>
-            <li>Vaccinations</li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/2910/2910762.png" alt="checkup icon"> General Checkups</li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/3160/3160109.png" alt="lab test icon"> Lab Tests</li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" alt="consultation icon"> Specialist Consultations</li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/2543/2543692.png" alt="vaccination icon"> Vaccinations</li>
         </ul>
     </section>
 
@@ -128,12 +157,16 @@
         <h2>Doctor Appointments</h2>
         <p>You can schedule your appointments with ease. Call or email us to book your slot.</p>
         <a href="mailto:maria@example.com" class="btn">Contact to Book</a>
+        <div>
+            <img src="https://images.unsplash.com/photo-1580281657527-f0c6c1c05e27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="doctor" class="about-img">
+        </div>
     </section>
 
     <!-- About -->
     <section id="about">
         <h2>About Us</h2>
         <p>Maria Health Services is dedicated to providing quality healthcare with a personal touch. We care about your wellness and strive to make your experience comfortable and easy.</p>
+        <img src="https://images.unsplash.com/photo-1580281657527-f0c6c1c05e27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="team" class="about-img">
     </section>
 
 </body>
