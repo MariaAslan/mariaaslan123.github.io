@@ -1,46 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Maria Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Health Services</title>
     <style>
+        /* Genel stil */
         body {
-            font-family: Arial;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* gökyüzü mavisi */
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #00796b; /* koyu yeşil */
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Bölümler */
+        section {
+            padding: 60px 20px;
             text-align: center;
-            background-color: #f5f5f5;
         }
-        h1 {
+
+        #home {
+            background-color: #b2ebf2; /* açık mavi */
+        }
+
+        #services {
+            background-color: #ffffff; /* beyaz */
+        }
+
+        #appointments {
+            background-color: #c8e6c9; /* açık yeşil */
+        }
+
+        #about {
+            background-color: #ffffff; 
+        }
+
+        h1, h2 {
+            color: #004d40; /* koyu yeşil */
+        }
+
+        p {
             color: #333;
+            max-width: 600px;
+            margin: 10px auto;
         }
-        .box {
-            background: white;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        /* Butonlar */
+        .btn {
+            background-color: #00796b;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #004d40;
         }
     </style>
 </head>
 <body>
 
-    <h1>Hello, I'm Maria 👋</h1>
-
-    <div class="box">
-        <h2>About Me</h2>
-        <p>I am learning Web Development and QA Testing.</p>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo"><strong>Maria Health</strong></div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#appointments">Doctor Appointments</a>
+            <a href="#about">About</a>
+        </div>
     </div>
 
-    <div class="box">
-        <h2>My Skills</h2>
+    <!-- Home -->
+    <section id="home">
+        <h1>Welcome to Maria Health 🌿</h1>
+        <p>Your health is our priority. Explore our services and book doctor appointments easily.</p>
+        <a href="#appointments" class="btn">Book Appointment</a>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <h2>Our Services</h2>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>QA Testing</li>
+            <li>General Checkups</li>
+            <li>Lab Tests</li>
+            <li>Specialist Consultations</li>
+            <li>Vaccinations</li>
         </ul>
-    </div>
+    </section>
 
-    <div class="box">
-        <h2>Contact</h2>
-        <p>Email: maria@example.com</p>
-    </div>
+    <!-- Doctor Appointments -->
+    <section id="appointments">
+        <h2>Doctor Appointments</h2>
+        <p>You can schedule your appointments with ease. Call or email us to book your slot.</p>
+        <a href="mailto:maria@example.com" class="btn">Contact to Book</a>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Maria Health Services is dedicated to providing quality healthcare with a personal touch. We care about your wellness and strive to make your experience comfortable and easy.</p>
+    </section>
 
 </body>
 </html>
