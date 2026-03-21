@@ -58,7 +58,7 @@
         text-align: center;
     }
 
-    /* 🔥 HOME YEŞİL YAPILDI */
+    
     #home {
         background-color: #c8e6c9;
     }
@@ -72,6 +72,7 @@
         max-width: 650px;
         margin: 15px auto;
     }
+  
 
     ul {
         list-style: none;
@@ -110,6 +111,12 @@
         border-radius: 15px;
         margin-top: 20px;
     }
+      .center-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
     @media (max-width: 768px) {
         .nav-links {
@@ -165,13 +172,15 @@
 
 <!-- APPOINTMENTS -->
 <section id="appointments" style="background-color:#c8e6c9;">
-    <h2>Appointments</h2>
-    <p>You can schedule your appointments with ease.</p>
-    <a href="mailto:maria@example.com" class="btn">Contact to Book</a>
+    <div class="center-box">
+        <h2>Appointments</h2>
+        <p>You can schedule your appointments with ease.</p>
+        <a href="mailto:maria@example.com" class="btn">Contact to Book</a>
 
-    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80" class="about-img">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80" class="about-img">
+    </div>
+
 </section>
-
 <!-- ABOUT -->
 <section id="about">
     <h2>About Us</h2>
